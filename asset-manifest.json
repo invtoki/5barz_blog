@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/dojo-blog/static/css/main.57d1d7c1.css",
-    "main.js": "/dojo-blog/static/js/main.9b6a37e2.js",
-    "index.html": "/dojo-blog/index.html",
-    "main.57d1d7c1.css.map": "/dojo-blog/static/css/main.57d1d7c1.css.map",
-    "main.9b6a37e2.js.map": "/dojo-blog/static/js/main.9b6a37e2.js.map"
+    "main.css": "/5barz_blog/static/css/main.57d1d7c1.css",
+    "main.js": "/5barz_blog/static/js/main.9b6a37e2.js",
+    "index.html": "/5barz_blog/index.html",
+    "main.57d1d7c1.css.map": "/5barz_blog/static/css/main.57d1d7c1.css.map",
+    "main.9b6a37e2.js.map": "/5barz_blog/static/js/main.9b6a37e2.js.map"
   },
   "entrypoints": [
     "static/css/main.57d1d7c1.css",
