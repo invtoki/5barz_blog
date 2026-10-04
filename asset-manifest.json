@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/5barz_blog/static/css/main.42cad82b.css",
+    "main.css": "/5barz_blog/static/css/main.60a74b09.css",
     "main.js": "/5barz_blog/static/js/main.f68555a2.js",
     "index.html": "/5barz_blog/index.html",
-    "main.42cad82b.css.map": "/5barz_blog/static/css/main.42cad82b.css.map",
+    "main.60a74b09.css.map": "/5barz_blog/static/css/main.60a74b09.css.map",
     "main.f68555a2.js.map": "/5barz_blog/static/js/main.f68555a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.42cad82b.css",
+    "static/css/main.60a74b09.css",
     "static/js/main.f68555a2.js"
   ]
 }
