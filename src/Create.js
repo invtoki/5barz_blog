@@ -1,6 +1,9 @@
 import { useState } from "react";
 import {useHistory} from "react-router-dom";
 import { uploadImage } from './Cloudinary';
+import { ref, push } from "firebase/database";
+import { db } from "./firebase";
+
 
 const Create = () => {
     const [title, setTitle] = useState('');
@@ -46,11 +49,7 @@ const Create = () => {
       const image = file ? await uploadImage(file) : '';
  
       // 2. Save the post with just the URL
-      await fetch('http://localhost:8000/blogs', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title, body, author, image }),
-      });
+      await push(ref(db, 'blogs'), { title, body, author, image });
  
       history.push('/');
     } catch (err) {

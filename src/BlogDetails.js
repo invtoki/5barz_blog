@@ -1,17 +1,17 @@
 import useFetch from "./useFetch";
 import { useHistory, useParams } from "react-router-dom";
+import { ref, remove } from "firebase/database";
+import { db } from "./firebase";
+
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isLoading } = useFetch('http://localhost:8000/blogs/' + id);
+    const { data: blog, error, isLoading } = useFetch('blogs/' + id);
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('http://localhost:8000/blogs/' + blog.id, {
-            method: 'DELETE'
-        }) .then(() => {
-            history.push('/');
-        })
+        remove(ref(db, 'blogs/' + blog.id));
+        history.push('/');
     }
 
     return ( 
