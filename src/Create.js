@@ -96,7 +96,7 @@ const Create = () => {
                 >
                     <option value="seun">TokiSeun</option>
                     <option value="blossom">Blossom</option>
-                    <option value="blossom">Daniel</option>
+                    <option value="daniel">Daniel</option>
                 </select>
                 {!isLoading && <button>Add Blog</button>}
                 {isLoading && <button disabled>Adding Blog...</button>}
